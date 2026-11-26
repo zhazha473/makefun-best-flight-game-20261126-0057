@@ -1,0 +1,46 @@
+/* SALTWIND COURIER — page chrome around the game canvas. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #160f28;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  color: #fff3d6;
+}
+
+#stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 12px;
+}
+
+#game-canvas {
+  display: block;
+  width: min(1280px, 100vw);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: #241640;
+  border: 2px solid #6e2a72;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+  cursor: crosshair;
+}
+
+#fallback {
+  max-width: 640px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255, 243, 214, 0.75);
+  margin: 12px 0 0;
+}
